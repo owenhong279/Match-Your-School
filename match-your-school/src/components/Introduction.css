@@ -20,21 +20,39 @@
 
 
 .introduction-page{
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-page::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/uni.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
     z-index: -1;
 }
 
+
 .introduction-container{
     position: absolute;
-    top: 10%;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 30%;
     position: relative;
     color: white;
     z-index: 1;
@@ -43,16 +61,22 @@
 }
 
 .explore{
+    cursor: pointer !important;
     
     position: relative;
-    
+    font-size: 1.2rem;
     padding: 12px 26px;
     background-color: #ffffff00;
     color: green;
     border: 3px solid green;
-    cursor: pointer;
-    font-size: 1.2rem;
     margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+.explore:hover {
+    background-color: #4CAF50; 
+    color: white; 
+    border-color: #4CAF50; 
 }
 
 .introduction-container h1 {
@@ -64,5 +88,12 @@
 .introduction-container p {
     color: #ffffff;
     font-size: 1.2rem;
+}
+
+.introduction-container h2 {
+    margin-top: 70px;
+    color: #ffffff;
+    font-size: 1.7rem;
+    
 }
 
