@@ -13,7 +13,7 @@ function HomePage(){
     return (
         <div className="container">
             <div className="title">
-                <h1>Elevate Your Potential</h1>
+                <h1>Discover Your Path</h1>
             </div>
             <button className="startButton" onClick={handleClick}>
                 Get Started
