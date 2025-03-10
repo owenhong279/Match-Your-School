@@ -7,6 +7,10 @@ function Introduction() {
     }
 
 
+    const handleExternalLink = (url) => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
     return(
         <div className="introduction-page">
             <div className="introduction-container">
@@ -20,7 +24,30 @@ function Introduction() {
                     Start Exploring
                 </button>
                 <h2>About Explore Your Fit</h2>
+                <div className="feature-boxes">
+                    
+                    <div className='feature-box'
+                        onClick={() => handleExternalLink('https://www.studyaustralia.gov.au/en')}>
+                        <div className='box-content'>
+                            <h3>Study with Australia</h3>
+                        </div>
+                    </div>
 
+                    <div className='feature-box'
+                        onClick={() => handleExternalLink('https://www.studyaustralia.gov.au/en/plan-your-studies/list-of-australian-universities')}>
+                        <div className='box-content'>
+                            <h3>List of Universities</h3>
+                        </div>
+                    </div>
+
+                    <div className='feature-box'
+                        onClick={() => handleExternalLink('https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500')}>
+                        <div className='box-content'>
+                            <h3>Plan Your Study</h3>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     )
