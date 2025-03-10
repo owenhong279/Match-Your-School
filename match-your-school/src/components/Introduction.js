@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Introduction.css';
 
 function Introduction() {
+
+    const navigate = useNavigate();
+    
     const handleExplore = () => {
-        console.log('Explore button clicked');
-    }
+        navigate('/tellusaboutyou');  
+    };
 
 
     const handleExternalLink = (url) => {

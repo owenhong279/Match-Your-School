@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 import Introduction from './components/Introduction.js';
+import TellUsAboutYou from './components/TellUsAboutYou.js';
 import React from 'react';
 
 function HomePage(){
@@ -30,7 +31,7 @@ function App() {
             <Routes>
                 <Route path = "/" element={<HomePage />} />
                 <Route path = "/introduction" element={<Introduction />} />
-
+                <Route path = "/tellusaboutyou" element={<TellUsAboutYou />} />
             </Routes>
 
         </div>
