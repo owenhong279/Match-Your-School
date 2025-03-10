@@ -1,12 +1,9 @@
-@keyframes backgroundPan{
-  0%{
-    background-position: 0% center;
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
   }
-  50%{
-    background-position: 100% center;
-  }
-  100%{
-    background-position: 0% center;
+  100% {
+    transform: scale(1.15);
   }
 }
 
@@ -28,11 +25,11 @@
   width: 100%;
   height: 100%;
   background-image: url('./images/au.jpg');
-  background-size: 120% 100%;
+  background-size: cover;
   background-position: center;
   filter: brightness(50%); /* Darkens the background image */
   z-index: -1; /* Places the background behind the content */
-  animation: backgroundPan 40s linear infinite;
+  animation: kenBurns 8s  ease infinite alternate;
   
 
 }
