@@ -1,3 +1,15 @@
+@keyframes backgroundPan{
+  0%{
+    background-position: 0% center;
+  }
+  50%{
+    background-position: 100% center;
+  }
+  100%{
+    background-position: 0% center;
+  }
+}
+
 .App{
   position: relative;
   text-align: center;
@@ -16,10 +28,12 @@
   width: 100%;
   height: 100%;
   background-image: url('./images/au.jpg');
-  background-size: cover;
+  background-size: 120% 100%;
   background-position: center;
   filter: brightness(50%); /* Darkens the background image */
   z-index: -1; /* Places the background behind the content */
+  animation: backgroundPan 40s linear infinite;
+  
 
 }
 
