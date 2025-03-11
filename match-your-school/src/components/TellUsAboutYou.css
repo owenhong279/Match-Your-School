@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -38,46 +38,13 @@
 .dropdown-container label {
     margin-top: 30px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 5px;
-}
-
-select {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    color: #333;
-    cursor: pointer;
-}
-
-select:hover {
-    background-color: #ffffff;
 }
 
 select:focus {
     outline: none;
     border-color: #4CAF50;
-}
-
-.submit{
-    cursor: pointer !important;
-    position: relative;
-    font-size: 1.2rem;
-    padding: 12px 26px;
-    background-color: #ffffff00;
-    color: green;
-    border: 3px solid green;
-    margin-top: 40px;
-    transition: all 0.3s ease;
-}
-
-.submit:hover {
-    background-color: #4CAF50; 
-    color: white; 
-    border-color: #4CAF50; 
 }
 
 .chat-container {
