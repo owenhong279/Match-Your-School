@@ -126,4 +126,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Study Australia](https://www.studyaustralia.gov.au/en) resources
 - Australian Universities data
 - Immigration information from the Department of Home Affairs
-- DeepSeek AI for chat functionality
+- AI for chat functionality
